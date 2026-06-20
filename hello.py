@@ -1,2 +1,1 @@
-name="Alice"
-print(f"Hello, {name}!")
+name:str = "Azza";
