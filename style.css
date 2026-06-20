@@ -1,3 +1,65 @@
 th{
     color:red;
 }
+
+.parent{ 
+    /* display:flex; */
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 100px;
+    grid-auto-flow: column;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: brown;
+    width: 100px;
+    
+}
+.child{
+    order: 2;
+    flex-grow:2;
+    
+    /* grid-row:2; */
+/*     background-color: inhirit;
+ */ background-color: aqua;    
+ width:2rem;
+    transform:rotate(90deg);
+    animation-name: spin;
+    animation-duration:5s
+}
+
+/* div p{
+    color:red
+} */
+
+
+div + p{
+    color:aqua
+}
+div ~ p {
+    color: magenta
+}
+
+div > p{
+color:chartreuse
+}
+
+p:first-child{
+    color:yellow;
+}
+
+nav{
+
+    box-sizing: border-box;
+    background-color: red;
+    position:sticky;
+    top: 0;
+}
+.button-conteneur{
+    position: relative;
+}
+
+.bulle{
+    position:absolute;
+    bottom:100%;
+    left:50%
+}
